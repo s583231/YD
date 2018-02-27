@@ -1,0 +1,102 @@
+<html>
+    <head>
+    <meta charset="utf-8" >
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="..\css\article_details.css">
+    <title>
+        文章详情
+    </title>
+    </head>
+    <body>
+        <!-- 最外面的盒子 -->
+        <div class="box">
+            <!-- 上面的 -->
+            <header>
+                <span>
+                    <a href="article_list.html">
+                        悦读项目
+                    </a>
+                </span>
+                <ul>
+                        <li class="user_icon">
+                            <a href="write_article.html" id="write">
+                                <img src="../images/icon_write.png" alt="">
+                                    写文章      
+                            </a>                    
+                        </li>
+                        <li class="user_name" id="user_lv">
+                            <img src="../images/哆啦A梦1.jpg" alt="图片" class="user_name_pic"id="user_name_pic">
+                            <span class="user_name"id="user_name">姓名</span>
+                            <img src="../images/icon_arrow_down.png" alt="" class="user_icon_down"> 
+                            <div class="userinfo" id="userinfo">
+                                <ul>
+                                    <a href="personal_center.html">
+                                        <li>
+                                            <img src="../images/icon_user.png" alt="">
+                                                个人中心
+                                        </li>
+                                    </a>
+                                    <a href="account_settings.html">
+                                        <li>
+                                            <img src="../images/icon_setting.png" alt="">
+                                            用户设置
+                                        </li>
+                                    </a>
+                                    <a href="login.html">
+                                        <li id="td">
+                                            <img src="../images/icon_exit.png" alt="">                                                   
+                                             退出登录
+                                        </li>
+                                    </a>
+                                </ul>                                  
+                            </div>
+                        </li>
+                    </ul>
+                <ul class="tokenNull">
+                    <li class="register">
+                        <a href="register.html">
+                            注册
+                        </a>
+                    </li>  
+                    <li class="login">
+                        <a href="login.html">
+                            登录
+                        </a>
+                    </li>             
+                </ul>
+            </header>
+            <!-- 中间的盒子 -->
+            <div class="center">
+                
+                <div class="comments" id="comments">
+                    <p>文章点评</p>
+                    <form action="">
+                        <textarea name="" id="text_area" cols="30" rows="10" placeholder="我有话要说....."></textarea>
+                        <button type="button" id="btntj" onclick="comment_add()">提交</button>
+                    </form>
+                </div>  
+                <div class="user-comments" id="user-comments">
+                <p >最近评论</p>  
+                </div>
+             </div>
+             <div id="loading" >
+                <img src="../images/icon_loading.png" alt="" >
+                正在加载中...
+            </div>
+            <!-- 按钮 -->
+            <img src="../images/icon_backtop.png" alt="" class="btnReturn">      
+            <!-- 最下面的盒子 -->
+            <div class="bottom">
+                    <span>copyright @ 2017spis.sh all rights reserved|陕ICP备15013925号-3</span>
+            </div>
+        </div>
+    </body>
+    <script src="../js/common.js"></script>
+    <script src="../js/checklogin.js"></script>
+    <script src="../js/article_details.js"></script>
+    <script src="https://cdn.bootcss.com/moment.js/2.20.1/moment.js">    
+        moment().format();
+    </script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.js"></script>
+    
+</html>

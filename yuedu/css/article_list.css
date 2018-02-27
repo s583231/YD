@@ -1,0 +1,149 @@
+/* 中间的 */
+.center{
+    position:relative;
+    width:auto;
+    height:auto;
+}
+
+/* 三条新闻的盒子 */
+.news{
+    margin:55px auto auto;
+}
+/* 总的大盒子 */
+.new{
+    margin:21px auto;
+    width:998px;
+    height:241px;
+    border:1px solid rgba(0, 0, 0,0.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+    border-radius:2px;
+}
+
+.photo1{
+    float: left;
+    width:396px;
+    height:241px;
+    /* border:1px solid #123; */
+}
+
+.photo1 img{
+    width:100%;
+    height:100%;
+}
+
+
+
+.text1{
+    float:right;
+    color: #090a0c;
+    font-size:14px;
+    margin: auto 36px;
+    width:530px;
+    height:241px;
+    /* border:1px solid #123; */
+}
+
+
+.new .text1 h3{
+    margin:35px auto 14px;
+}
+.new .text1 p{
+    font-size: 14px;
+    text-indent:2em;    
+    width:527px;
+    height:72px;
+    margin:14px 39px 33px auto;
+}
+
+
+/* 列表用户信息,时间 */
+.center .new .text_userinfo ul {
+    line-height: 38px;
+    height:38px;
+    float:left;
+    width: 330px;
+    /* border:1px solid red; */
+
+}
+.center .new .text_userinfo li {
+    float:left;
+    /* border:1px solid red; */
+    width:100px; 
+    
+}
+.center .new .text_userinfo img{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+}
+
+.user_lv{
+    font-size:14px;
+    margin:auto 11px auto 0px;
+}
+.text_userinfo .time{
+    margin-right:0px;
+    margin-left: auto;
+}
+
+
+/* 列表icon */
+.center .new .icon{
+    height:38px;
+    /* border:1px solid red; */
+
+}
+.center .new .icon li {
+    float:right;
+    /* border:1px solid red; */
+    line-height: 38px;
+    width:90px; 
+}
+
+.center .new .icon .zan{
+    width:20px;
+    height:13px;
+    /* margin-right:5px; */
+}
+
+.center .new .icon .look{
+    width:15px;
+    height:15px;
+}
+
+#loading img{
+    width:30px;
+    height:30px;
+    vertical-align:-8px;
+}
+#loading{
+    width:100%;
+    margin:40px 47.8%;
+    color:rgba(0,0,0,0.4)
+}
+/* 返回上面的按钮 */
+.btnReturn{
+    width:45px;
+    height:45px;
+    /* border:1px solid red; */
+    position: fixed;
+    display: none;    
+    right:70px;
+    bottom: 105px;   
+}
+.bottom{
+    border-top:1px solid #000;
+    width: 100%;
+    height:60px;
+    font-size: 13px;
+    color: #000;
+    letter-spacing: 0;
+    line-height:60px;
+    text-align: center;
+    margin-top:25px;
+}
+
+/* .user_name_pic{
+    float:left;
+    top:7.5px;
+} */

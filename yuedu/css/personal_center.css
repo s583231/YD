@@ -1,0 +1,204 @@
+
+/* 上面的图片 */
+.top {
+    width:100%;
+    height:298px;
+    background-image:url(../images/bg_center.png);
+    background-repeat:no-repeat;
+   
+}
+.top img{
+    width:100%;
+    height:100%;
+}
+/* 图片上的用户的盒子 */
+.top .user{
+    width:160px;
+    height:260px;
+    margin:auto auto;
+    /* border:1px solid red; */
+   
+}
+
+/* 用户的图片 */
+.top .user .user_pic{
+    color:#fff;
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    /* border:1px solid #111; */
+    margin:0px auto;
+    padding-top:69px;
+
+}
+.top .user .user_pic img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+
+/* 用户图片下的文字 */
+.top .user .user_pic .user_name{
+    font-size:18px;
+}
+.top .user .user_pic p{
+    color:#fff;
+    text-align: center;
+    margin:22px auto 7px;
+}
+
+
+
+/* 下面的文章列表 */
+.bottom{
+    width:998px;
+    height:auto;
+    margin:21px auto;
+    /* border:1px solid #111; */
+
+}
+
+/* 文章两字 */
+.box .bottom .list1{
+    width:998px;
+    height:34px;
+    line-height:34px;
+    font-size:16px;
+    border-bottom:1px solid rgba(127,74,136,0.5);
+}
+
+/* 列表 */
+/* 总的大盒子 */
+.news{
+    margin:55px auto auto;
+}
+.new{
+    margin:21px auto;
+    width:998px;
+    height:241px;
+    border:1px solid rgba(0, 0, 0,0.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+    border-radius:2px;
+}
+
+.photo1{
+    float: left;
+    width:396px;
+    height:241px;
+    /* border:1px solid #123; */
+}
+
+.photo1 img{
+    width:100%;
+    height:100%;
+}
+
+
+
+.text1{
+    float:right;
+    color: #090a0c;
+    font-size:14px;
+    margin: auto 36px;
+    width:530px;
+    height:241px;
+    /* border:1px solid #123; */
+}
+
+
+.new .text1 h3{
+    margin:35px auto 14px;
+}
+.new .text1 p{
+    font-size: 14px;
+    text-indent:2em;    
+    width:527px;
+    height:72px;
+    margin:14px 39px 33px auto;
+}
+
+
+/* 列表用户信息,时间 */
+.news .new .text_userinfo ul {
+    line-height: 38px;
+    height:38px;
+    float:left;
+    width: 330px;
+    /* border:1px solid red; */
+
+}
+.news .new .text_userinfo li {
+    float:left;
+    /* border:1px solid red; */
+    width:100px; 
+}
+.news .new .text_userinfo .new_pic {
+    width:50px; 
+}
+.news .new .text_userinfo .user_lv{
+    width:80px; 
+    text-align: center;
+    
+}
+
+.news .new .text_userinfo img{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+}
+
+.user_lv{
+    font-size:14px;
+    margin:auto 11px auto 0px;
+}
+.text_userinfo .time{
+    margin-right:0px;
+    margin-left: auto;
+}
+
+
+/* 列表icon */
+.news .new .icon{
+    height:38px;
+    /* border:1px solid red; */
+
+}
+.news .new .icon li {
+    float:right;
+    /* border:1px solid red; */
+    line-height: 38px;
+    width:90px; 
+}
+
+.news .new .icon .zan{
+    width:20px;
+    height:13px;
+    /* margin-right:5px; */
+}
+
+.news .new .icon .look{
+    width:15px;
+    height:15px;
+}
+
+#loading img{
+    width:30px;
+    height:30px;
+    vertical-align:-8px;
+}
+#loading{
+    width:100%;
+    margin:40px 47.8%;
+    color:rgba(0,0,0,0.4)
+}
+/* 返回上面的按钮 */
+.btnReturn{
+    width:45px;
+    height:45px;
+    /* border:1px solid red; */
+    position: fixed;
+    display: none;    
+    right:70px;
+    margin-top: 20px;
+    bottom: 105px;   
+}

@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+/* 最外面的盒子 */
+body background{
+    width:100%;
+    height:100%;
+}
+.domo{
+    margin: 0px auto;
+    height: auto;
+    width: auto;
+    border: 1px solid #000;
+    background-image: url(../images/bg.jpg);
+    
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    }
+/* 上面的 */
+.top{
+    height: 60px;
+    width: auto;
+    background: rgba(127, 74, 136, 0.3)
+    /* 子元素继承父元素解决方式 */
+}
+
+/* 上面的文字 */
+.top li{
+
+    float: left;
+    font-family:PingFangSC-Regular;
+    font-size: 24px;
+    color: #FFF;
+    opacity: 1;
+    line-height: 60px;
+    /* letter-spacing: 0; */
+}
+
+.li-m1{
+    margin-left: 39px;
+    margin-right:10px;
+}
+
+.li-m2{
+    margin-left:10px;
+}
+
+
+/* 中间的 */
+.center{
+    position:relative;
+    width:auto;
+    height:913px;
+}
+
+/* 中间的登录框 */
+.login{
+    margin:10.1% auto;
+    height: auto;
+    width: 567px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+}
+
+#oPrompt_p{
+    color:green;
+}
+/* 登录,注册 */
+.login li{
+    width:90px;
+    height:46px;
+    float:left;
+    opacity:0.7;
+    font-family: PingFangSC-Regular;
+    font-size:22px; 
+    text-align: center;
+    margin-top:5.2%;
+    margin-bottom: 3.7%;
+}
+.login-d{
+    margin-left:184px;    
+    border-bottom: 3px solid #7F4A88;
+    color:#7F4A88;
+}
+.login-z{
+    margin-left: 44px;
+    color:#fff;
+}
+
+/* form表单 */
+/* 131px 80px 17px 77px */
+.register-size1,
+.register-size4{
+    margin: 8.5px 80px 8.5px 77px;
+}
+
+.register-size2{
+    margin: 8.5px 16px 8.5px 77px;
+}
+
+/* 登录框大小 */
+.register-size1,
+.register-size2,
+.register-size3,
+.register-size4{
+    font-family: ArialMT;
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    border: 1px solid #7F4A88;
+    border-radius: 5px;
+    height: 42px;
+    width: 410px;
+    background: rgba( 255,255,255,0);
+    text-indent:13px;
+}
+.center login li:focus{
+    color: #fff;
+}
+
+/* 验证码前面的 */
+.register-size2{
+    width: 289px;
+}
+
+/* 获取验证码 */
+
+
+
+/* 注册 */
+.register-size4{
+    font-size: 18px;
+    line-height: 25px;
+    background: #7F4A88;
+    border-radius: 5px;
+    border: 1px solid #7F4A88;
+}
+
+#lja{
+    display:inline-block;
+    margin-bottom:60px;
+    margin-top:21px;
+}
+#lja a{
+    margin-left:120px;
+    margin-right:80px;
+    font-size: 13px;
+    color:#fff;
+}
+
+
+
+/* 最下面的盒子 */
+.bottom{
+    border-top:1px solid #fff;
+    width: auto;
+    height:60px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height:60px;
+    text-align: center;
+}

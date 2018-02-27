@@ -1,0 +1,342 @@
+*{
+    margin:0PX;
+    padding: 0PX;
+    list-style:none;
+    font-family:arial;
+    text-decoration: none;
+}
+/* 最外面的盒子 */
+.domo{
+    position: relative;
+    margin: 0px auto;
+    /* height: 1949px; */
+    height: auto;
+    width: auto;
+    border: 1px solid #000;
+    background-size:1440px 1033px;
+    }
+/* 上面的 */
+.top{
+    height: 60px;
+    width: auto;
+    background: rgb(127, 74, 136)
+}
+
+/* 上面的文字 */
+.top li{
+    float: left;
+    font-size: 24px;
+    color: #FFF;
+    line-height: 60px;
+}
+
+/* 左边的文字 APIS*/
+.li-m1{
+    margin-left: 39px;
+    margin-right:10px;
+}
+
+/* 左边 阅读项目 */
+.li-m2{
+    margin-left:10px;
+}
+
+/* 右边的文字 */
+.top-right{
+    float:right;   
+}
+.top .top-right li a{
+    font-size: 14px;
+    color: #FFF;
+    line-height: 60px;
+    margin:auto 20px;
+}
+
+.top .top-right li img{
+    width:18px;
+    height:18px;
+
+    /* border:1px solid red; */
+}
+
+/* 中间 */
+.center{
+    position:relative;
+    width:auto;
+    /* height:1970px; */
+    height:auto;
+}
+
+/* 定义一个中间的盒子,将文章内容框起来 */
+.center .box{
+    position: relative;
+    margin:67px auto auto;
+    width: 906px;
+    height:1690px;
+    /* border:1px solid #123; */
+}
+
+/* 文章的标题 */
+.center .box span{
+    font-size: 24px;
+    color: #222629;
+    margin:5px auto 16px;
+}
+
+/* 分享图标 */
+
+.center > .box > .icon >  img{
+    width:15px;
+    height:15px;
+    /* border:1px solid red; */
+    margin-left:50px;
+    margin-right: 20px;
+    /* vertical-align: -2px; */
+
+}
+.center > .box > span > img{
+    width:100%;
+    height: 100%;
+    /* vertical-align:5px; */
+}
+/* 分享 */
+.center .box .icon {
+    color:rgba(127,74,136,0.7);
+    font-size:14px;
+    line-height:14px;
+}
+
+/* 二维码 */
+.center  .icon .Qr-box{
+    position: absolute;
+    left:429px;
+    top:35px;
+    background: #fff;
+    width:147px;
+    height:191px;
+    box-shadow: 0 2px 6px 0 ;
+    font-size: 14px;
+    line-height: 34px;
+    text-align:center;
+}
+/* 二维码 */
+.center .icon .Qr{
+    width:132px;
+    height:132px;
+    margin-right: 8px;
+    margin-left:7px;
+    margin-top:15px;
+    margin-bottom:11px;
+}
+/* 二维码 */
+.center .Qr img{
+    width:100%;
+    height:100%;
+}
+.Qr-box{
+    /* display: none; */
+    visibility: hidden;
+}
+
+
+
+
+
+/* 标题下面的作者 */
+.center .box .author{
+    width:906px;
+    height:36px;
+    margin-top:24px;
+    margin-bottom: 17px;
+}
+
+/* 作者栏 */
+.center .box .author span{
+    font-size: 14px;
+    display: inline-block;
+    margin-right:20px;
+}
+.center .box .author .pic{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    /* border:1px solid red; */
+    vertical-align: -10px;
+}
+
+/* 头像大小 */
+.center .box .author .pic img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+
+
+/* 作者栏 左右外边距*/
+.center .right li,
+.center .left li{
+    margin:0px 20px;
+}
+
+.center .box .mar{
+    margin-right:70px;
+}
+
+
+/* 文章的图片 */
+.picture{
+    width:906px;
+    height:375px;
+    /* border:1px solid red; */
+}
+
+.picture img{
+    width:100%;
+    height:100%;
+}
+
+
+/* 文章具体内容的盒子 */
+.center .box .text{
+    width:906px;
+    height:auto;
+    margin:40px auto; 
+    /* opacity:0.5; */
+  
+}
+/* 文章 */
+.center .box .text p{
+    color:#222629;
+    font-size:14px;
+    text-indent: 2em;
+    line-height:2em;
+}
+
+/*发表 评论 */
+
+.center .comments{
+    margin: auto;
+    width:906px;
+    height:215px;
+    border-top:1px solid rgba(127,74, 136, 0.5) ;
+    
+   
+}
+
+.center  .comments p,
+.center  .user-comments p{
+    font-size:14px;
+    color:#222629;
+    line-height:20px; 
+}
+
+.center  .comments p{
+    margin:20px; 
+}
+
+.user-comments > p{
+    margin:20px auto; 
+
+}
+
+/* 发表评论的区域 */
+.center  .comments textarea{
+    width:907px;
+    height:103px;
+    color:rgba(22, 26, 29, 0.7);
+    line-height:20px;
+    font-size:14px;
+    background:rgba(127,74,136,0.2);
+    /* opacity: 0.5; */
+    border-radius:5px;
+    text-indent:14px;
+    resize: none;
+}
+
+/* 提交按钮 */
+.center  .comments button{
+    float: right;
+    margin-top:22px;
+    width:88px;
+    height:36px;
+    color:#fff;
+    background:rgb(127,74,136) ;
+    line-height:14px;
+    font-size:14px;
+    border-radius:4px;
+    border: none;
+}
+
+
+/* 最近评论 */
+.center .user-comments{
+    /* display: inline-block; */
+    margin-top:40px;
+    line-height:17px;
+    width:906px;
+    height:auto;
+    margin: auto;
+    /* border:1px solid red; */
+}
+
+/* 评论,时间,内容 */
+.center .user-comments .comment1 span,
+.center .user-comments .comment2 span,
+.center .user-comments .comment3 span{
+    font-size:14px;
+    display: inline-block;
+    margin:19px 10px 16px;
+}
+
+/* 存放头像的盒子 */
+.center .user-comments .comment1 .pic,
+.center .user-comments .comment2 .pic,
+.center .user-comments .comment3 .pic{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    /* border:1px solid red; */
+    vertical-align: -13px;
+}
+
+/* 头像大小 */
+.center .user-comments .comment1 .pic img,
+.center .user-comments .comment2 .pic img,
+.center .user-comments .comment3 .pic img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+
+
+/* 评论的框 */
+.center .user-comments .comment1 ,
+.center .user-comments .comment2 ,
+.center .user-comments .comment3 {
+    width:906px;
+    height:106px;
+    border-top: 1px solid rgba(127,74,136,0.5)
+   
+}
+
+/* 评论的缩进 */
+.center .user-comments .comment1 p,
+.center .user-comments .comment2 p,
+.center .user-comments .comment3 p{
+    text-indent: 5em;
+}
+
+
+
+.bottom{
+    border-top:1px solid #7F4A88;
+    width: 100%;
+    height:60px;
+    margin-top:40px;
+    font-size: 13px;
+    color: #000;
+    letter-spacing: 0;
+    line-height:60px;
+    text-align: center;
+}
+

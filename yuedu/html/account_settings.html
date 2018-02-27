@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>账户设置</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/account_settings.css">
+    </head>
+    <body>
+        <div class="box">
+            <header>
+                <span>
+                    <a href="article_list.html">
+                        悦读项目
+                    </a>
+                </span>
+                <ul>
+                        <li class="user_icon">
+                            <button id="save">保存</button>                          
+                        </li>
+                        <li class="user_name" id="user_lv">
+                            <img src="../images/哆啦A梦1.jpg" alt="图片" class="user_name_pic"id="user_name_pic">
+                            <span class="user_name"id="user_name">姓名</span>
+                            <img src="../images/icon_arrow_down.png" alt="" class="user_icon_down"> 
+                            <div class="userinfo" id="userinfo">
+                                <ul>
+                                    <a href="personal_center.html">
+                                        <li>
+                                            <img src="../images/icon_user.png" alt="">
+                                                个人中心
+                                        </li>
+                                    </a>
+                                    <a href="change_password.html">
+                                        <li>
+                                            <img src="../images/icon_setting.png" alt="">
+                                            修改密码
+                                        </li>
+                                    </a>
+                                    <a href="login.html">
+                                        <li id="td">
+                                            <img src="../images/icon_exit.png" alt="">                                                   
+                                             退出登录
+                                        </li>
+                                    </a>
+                                </ul>                                  
+                            </div>
+                        </li>
+                    </ul>
+                <ul class="tokenNull">
+                    <li class="register">
+                        <a href="register.html">
+                            注册
+                        </a>
+                    </li>  
+                    <li class="login">
+                        <a href="login.html">
+                            登录
+                        </a>
+                    </li>             
+                </ul>
+            </header>
+            <div class="center">
+                <div class="text">
+                    <span>账户设置</span>
+                </div>
+                <div class="info">
+                    <form action="post">
+                            <p class="p_ib">
+                                头像
+                            </p>
+                             
+                            <label for="file_img" id="lab_img">
+                                 
+                                <input type="file" class="pic" id="file_img">
+                                <div id="div_img" ></div>
+                                <span>上传文件</span>
+                            </label>
+                        <p>昵称:<input type="text" name="name" placeholder="请输入昵称" class="size1"></p>
+                        <p id="sex">性别:
+                            <input type="radio" name="sex" value="man" class="sex">男
+                            <input type="radio" name="sex" value="woman" class="sex">女                   
+                        </p>
+                        <p>
+                            星座:
+                            <select name="star" id="star">    
+                                <option value="星座">星座</option>
+                               
+                            </select>
+                        </p>
+                        <p>城市:
+                            <select id="province" class="form-control">
+                            </select>
+                        <p>密码:<input type="password" class="size1" placeholder="请输入密码"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <span>copyright @ 2017spis.sh all rights reserved|陕ICP备15013925号-3</span>
+        </div>
+        <script src="../js/common.js"></script>
+        <script src="../js/save.js"></script>        
+        <script src="../js/account_settings.js"></script>
+
+        <!-- <script src="../js/checklogin.js"></script>         -->
+        <!-- <script src="../js/star.js"></script> -->
+        <!-- <script src="../js/file_img.js"></script>   -->
+        <!-- <script src="../js/province.js"></script> -->
+    </body>
+</html>

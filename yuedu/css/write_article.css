@@ -1,0 +1,137 @@
+
+
+/* 中间的整体的 */
+.center{
+    position: relative;
+    width:998px;
+    height:auto;
+    margin:58px auto;
+    border: 1px solid #F0E9F1;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+    border-radius: 2px;
+}
+/* 上面传图片 */
+.center .top{
+    position:relative;
+    width:998px;
+    height:287px;
+    /* border:1px solid #123; */
+
+}
+/* 去掉input */
+.center .top .pic{
+    position: absolute;
+    left:-9999px;
+}
+/* 相机 */
+.icon_cam{
+    position: absolute;
+    left:472px;
+    top:92px;
+    height:55px;
+    width:55px;
+}
+#div_img{
+    background: rgba(127,74,136,0.35); 
+    position: absolute;
+    z-index: 2;    
+    bottom:0;
+    left:52px;
+    width:896px;
+    height:257px;
+}
+#div_img img{
+    /* z-index: 2; */
+    height:100%;
+    width:100%;
+
+}
+/* #change_pic{
+    display: none;
+} */
+/* 中间的文字 */
+#text1{
+    display: inline-block;
+    position: absolute;
+    left:336px;
+    bottom: 110px;
+    height:20px;
+    width:292px;
+    font-size:14px;
+    color:rgb(22,26,29);
+    text-align: center;
+}
+.center .top .change_pic{
+    position: absolute;
+    bottom:0px;
+    height:41.8px;
+    width:998px;
+    z-index: 5;
+    /* display: none; */
+    /* border:1px solid #111; */
+    
+}
+
+#text2{
+    /* display:none; */
+    position:absolute;
+    z-index: 2;
+    left:52px;
+    text-align: center;
+    height:41.8px;
+    width:896px;
+    background:rgba(22,26,29,0.5);
+    color: #fff;
+    font-size:16px;
+    line-height:41.8px;
+}
+
+
+
+
+/* 文字 */
+.center .text{
+    width:895px;
+    height:auto;
+    margin:35px auto;
+    /* border:1px solid #111; */
+
+}
+/* 标题 */
+.center .tit{
+    width:895px;
+    height:54px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #BFA4C3;    
+    line-height:54px;
+    font-size:18px;
+    margin:1px auto;
+}
+/* 内容 */
+.center .bottom{
+    width:100%;
+    height:382px;
+    border:1px solid rgba(127,74,136,0.5);
+    margin-top:19px;
+    padding:8px;
+    resize: none;
+}
+
+.user_icon button{
+    background: transparent ;
+    border: none;
+    color: #fff;
+}
+
+
+
+footer{
+    border-top:1px solid #000;
+    width: auto;
+    height:60px;
+    font-size: 13px;
+    color: #000;
+    line-height:60px;
+    text-align: center;
+}
+

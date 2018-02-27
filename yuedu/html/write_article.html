@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>写文章</title>
+        <meta charset="utf-8">
+        <!-- <script src="../js/write_articke.js"></script> -->
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/write_article.css">
+    </head>
+    <body>
+        <header>
+            <span>
+                    <a href="article_list.html">
+                        悦读项目
+                    </a>
+                </span>
+            <ul>        
+                    <li class="user_icon">
+                        <button id="button">
+                            <img src="../images/icon_publish.png" alt="">
+                            发布   
+                        </button>                  
+                    </li>
+                    <li class="user_name" id="user_lv">
+                        <img src="../images/哆啦A梦1.jpg" alt="图片" class="user_name_pic"id="user_name_pic">
+                        <span class="user_name"id="user_name">姓名</span>
+                        <img src="../images/icon_arrow_down.png" alt="" class="user_icon_down"> 
+                        <div class="userinfo" id="userinfo">
+                        <ul>
+                            <a target="_blank" href="personal_center.html?id=` + dt[i]._id + `">
+                                <li>
+                                    <img src="../images/icon_user.png" alt="">
+                                        个人中心
+                                </li>
+                            </a>
+                            <a href="account_settings.html">
+                                <li>
+                                    <img src="../images/icon_setting.png" alt="">
+                                    用户设置
+                                </li>
+                            </a>
+                            <a href="login.html">
+                                <li id="td">
+                                    <img src="../images/icon_exit.png" alt="">                                                   
+                                     退出登录
+                                </li>
+                            </a>
+                        </ul>                                  
+                    </div>
+                </li>
+            </ul>
+            <ul class="tokenNull">
+                <li class="register">
+                    <a href="register.html">
+                        注册
+                    </a>
+                </li>  
+                <li class="login">
+                    <a href="login.html">
+                        登录
+                    </a>
+                </li>             
+            </ul>
+        </header>
+        <div class="center">
+            <div>
+            <form action="" class="top" >
+                <label for="file_img" id="lab_img">                             
+                    <input type="file" class="pic" id="file_img">                    
+                    <div id="div_img" ></div>
+                    <div class="icon_cam">
+                        <img src="../images/icon_camrea.png" alt="">
+                    </div>
+                    <span id="text1">请上传封面，支持3MB以内的JPG\PNG图片。</span>
+                    <div class="change_pic">
+                        <span id="text2">更换图片</span>
+                    </div>  
+                </label>      
+            </form>                        
+
+            <div class="text">
+                <form action="">
+                    <input type="text" placeholder="请输入标题" class="tit">
+                    <textarea name="txt" id="" cols="30" rows="10" placeholder="请输入正文......" class="bottom">
+
+                    </textarea> 
+                </form>
+            </div>
+        </div>
+        </div>
+
+    </body>
+    <script src="../js/common.js"></script>
+    <!-- <script src="../js/checklogin.js"></script> -->
+    <script src="../js/write_article.js"></script>
+
+</html>
+    
+    

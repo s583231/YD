@@ -1,0 +1,111 @@
+*{
+    padding:0px;
+    margin:0px;
+    text-decoration: none;
+    color:#000;
+    list-style:none;
+    /* color:#fff; */
+
+}
+header{
+
+    width:100%;
+    height:60px;
+    background:rgba(127,74,136,1);
+    font-size:24px;
+    line-height:60px;
+}
+header span{
+    float: left;
+    margin-left: 150px;
+    color:#fff;
+}
+header ul li{
+    float:right;
+    margin:auto 33px;
+    color:#fff;
+    font-size:16px;
+    line-height:60px;
+}
+header ul li a{
+    color: #FFF;
+}
+header ul li img{
+    width:18px;
+    height:18px;
+    vertical-align:-3px;
+}
+header ul li .pic{
+    width:36px;
+    height:36px;
+    vertical-align:-3px;
+    border-radius:50%;
+}
+header ul li img{
+    border-radius:50%;
+}    
+
+
+header ul li .pic{
+    width:13px;
+    height:13px;
+    vertical-align:-3px;
+}
+
+
+/* 中间的 */
+.center{
+    width:998px;
+    height:790px;
+    border:1px solid rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 4px 0px;
+    /* border:1px solid #111; */
+    margin:58px auto;
+    border-radius:2px;
+}
+.center .text{
+    width:895px;
+    height:730px;
+    margin:35px auto;
+    /* border:1px solid #111; */
+
+}
+
+/* 图片 */
+.center .top{
+    width:895px;
+    height:287px;
+    background-image: url(../images/文章详情.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+/* 标题 */
+.center .tit{
+    width:895px;
+    height:54px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #BFA4C3;    
+    line-height:54px;
+    font-size:18px;
+    margin:1px auto;
+}
+/* 内容 */
+.center .bottom{
+    width:100%;
+    height:382px;
+    border:1px solid rgba(127,74,136,0.5);
+    margin-top:19px;
+}
+
+
+
+footer{
+    border-top:1px solid #000;
+    width:100%;
+    height:60px;
+    font-size: 13px;
+    color: #000;
+    line-height:60px;
+    text-align: center;
+}
+
