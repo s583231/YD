@@ -3,11 +3,11 @@ window.onload = function(){
     checkLogin(); //登录状态
     loadArticle(1);// 请求文章列表,动态添加的
     // Preloading();  //预加载
-    // Lazy_load();  //懒加载
-    
+
      // 监听滚动事件
     window.addEventListener('scroll',_.throttle(lazyLoad(),1000)); //监听滚动条,加载下一页
     window.addEventListener('scroll',returnTop);  //返回顶部的按钮
+    window.addEventListener('scroll',_.throttle(checkImg(),100));
     
 }
 // 文章列表 
@@ -28,8 +28,8 @@ function loadArticle(page){  //动态添加文章
             <div class="new">
                 <div class="photo1">
                 <a target="_blank" href="article_details.html?id=` + dt[i]._id + `">
-                    <img src=`+image+dt[i].cover+`>
-                    </a>
+                    <img class="art-cover" src=`+image+dt[i].cover+`>
+                </a>
                 </div>
                 <div class="text1">
                     <h3>
@@ -139,34 +139,17 @@ function lazyLoad(page){ // 监听滚动条,加载第下页
     };
 };
 
-// //预加载图片
-// function Preloading(img){
-//     var Preloading_img = new Image();
-//     //预加载图片
-//     Preloading_img.src = img.dataset.src;
-//     //图片加载成功后，替换临时图片
-//     Preloading_img.onload = function(){
-//         img.src = img.dataset.src;
-//     }
-//     //加载失败
-//     Preloading_img.onerror = function(){
-//         img.src = 'images/1.jpg';
-//     }
-// }
-// /**
-//  * 验证图片是否需要懒加载
-//  */
-// function Lazy_load(){
-//     // 图片懒加载
-//     var imgs = document.getElementsByClassName('cover');
-//     for (var i=0; i<imgs.length; i++){
-//         // 图片距离顶部的高度
-//         var imgHeight = imgs[i].offsetTop;
-//         if(imgHeight < document.body.clientHeight + document.body.scrollTop){
-//             //图片预加载
-//             preLoad_images(imgs[i]);
-//             imgs[i].className = imgs[i].className.replace('cover','');    
-//         }
-//     }
-// }
-
+//懒加载图片
+function checkImg(){
+    var imgs = document.getElementsByClassName("art-cover");
+    for (var i =0; i < imgs[i].lebgth;i++){
+        //图片距离顶部的距离
+        var imgheight = imgs[i].offsetTop;
+        if(imgheight < document.documentElement.clientHeight + document.documentElement.scrollTop){
+            //图片预加载
+            Preloading_images(imgs[i]);
+            //重置已替换calss
+            imgs[i].className = imgs[i].className.replace("art-cover","")
+        }
+    }
+}

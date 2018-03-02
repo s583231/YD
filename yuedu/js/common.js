@@ -59,3 +59,20 @@ function userinfo(){  //封装一个登录状态栏用户信息的函数
     document.getElementById("user_name").innerHTML = localStorage.name;  //用户的姓名
     // console.log(localStorage.name);
 }
+
+
+//预加载图片
+function Preloading_images(img){
+    var temp_img = new Image();
+    //预加载图片
+    temp_img.src = image + img.dataset.src;
+    //图片加载成功后，替换临时图片
+    temp_img.onload = function(){
+        img.src = image + img.dataset.src;
+    }
+    //加载失败
+    temp_img.onerror = function(){
+        img.src = '../images/1.jpg';
+    }
+}
+
