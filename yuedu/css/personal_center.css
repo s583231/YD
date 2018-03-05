@@ -25,16 +25,21 @@
     color:#fff;
     width:110px;
     height:110px;
-    border-radius:50%;
-    /* border:1px solid #111; */
     margin:0px auto;
-    padding-top:69px;
+    padding-top:50px;
 
 }
-.top .user .user_pic img{
-    width:100%;
-    height:100%;
+.top .user .user_pic .user_pic1{
     border-radius:50%;
+}
+
+.user_pic .user_pic2{
+    width:31px;
+    height:31px;
+    position: relative;
+    top:120px;
+    left: 60px;
+    border-radius:50%;    
 }
 
 /* 用户图片下的文字 */

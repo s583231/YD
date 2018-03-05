@@ -1,7 +1,7 @@
 window.onload=function(){
     checkLogin();
     userinfo();  
-    header1(){
+    // header1();
 
 }
 
@@ -46,3 +46,4 @@ document.getElementById('button').onclick = function(data){
         }
     },data);
 }
+

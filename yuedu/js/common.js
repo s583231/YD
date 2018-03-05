@@ -61,18 +61,23 @@ function userinfo(){  //封装一个登录状态栏用户信息的函数
 }
 
 
-//预加载图片
-function Preloading_images(img){
-    var temp_img = new Image();
-    //预加载图片
-    temp_img.src = image + img.dataset.src;
-    //图片加载成功后，替换临时图片
-    temp_img.onload = function(){
-        img.src = image + img.dataset.src;
-    }
-    //加载失败
-    temp_img.onerror = function(){
-        img.src = '../images/1.jpg';
-    }
-}
+
+// //预加载图片
+// function Preloading_images(img){
+//     var temp_img = new Image();
+//     // 将请求到的图片的真实地址赋给temImg.src
+//     temp_img.src =  img.dataset.src;
+//     //图片加载成功后，替换临时图片
+//     temp_img.onload = function(){
+//         // 将图片的真实地址给img
+//         img.src = temp_img.src;
+    
+//     }
+//     //加载失败
+//     temp_img.onerror = function(){
+//         img.src = '../images/1.jpg';
+//     }
+//     // 预加载图片(接口返回的图片地址需要前加上服务器地址)。
+//     // tmpImg.src = image + img;
+// }
 

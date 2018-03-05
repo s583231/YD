@@ -7,7 +7,7 @@ window.onload = function(){
      // 监听滚动事件
     window.addEventListener('scroll',_.throttle(lazyLoad(),1000)); //监听滚动条,加载下一页
     window.addEventListener('scroll',returnTop);  //返回顶部的按钮
-    window.addEventListener('scroll',_.throttle(checkImg(),100));
+    // window.addEventListener('scroll',_.throttle(checkImg,100));
     
 }
 // 文章列表 
@@ -28,7 +28,7 @@ function loadArticle(page){  //动态添加文章
             <div class="new">
                 <div class="photo1">
                 <a target="_blank" href="article_details.html?id=` + dt[i]._id + `">
-                    <img class="art-cover" src=`+image+dt[i].cover+`>
+                    <img class="art-cover"   src="`+image+dt[i].cover+`">
                 </a>
                 </div>
                 <div class="text1">
@@ -41,7 +41,15 @@ function loadArticle(page){  //动态添加文章
                     <div class="text_userinfo">
                         <ul>
                             <li>
+                                <a target="_blank" href="personal_center2.html?`
+                                + dt[i].author._id + `?` 
+                                + dt[i].author.name +`?`
+                                + dt[i].author.gender + `?`
+                                + dt[i].author.constellations + `?`
+                                + dt[i].author.city + `?`
+                                + dt[i].author.avatar +`">
                                 <img src=`+image+dt[i].author.avatar+`>
+                                </a>
                             </li>
                             <li class="user_lv">
                                 `+dt[i].author.name+`
@@ -139,17 +147,17 @@ function lazyLoad(page){ // 监听滚动条,加载第下页
     };
 };
 
-//懒加载图片
-function checkImg(){
-    var imgs = document.getElementsByClassName("art-cover");
-    for (var i =0; i < imgs[i].lebgth;i++){
-        //图片距离顶部的距离
-        var imgheight = imgs[i].offsetTop;
-        if(imgheight < document.documentElement.clientHeight + document.documentElement.scrollTop){
-            //图片预加载
-            Preloading_images(imgs[i]);
-            //重置已替换calss
-            imgs[i].className = imgs[i].className.replace("art-cover","")
-        }
-    }
-}
+// //懒加载图片
+// function checkImg(){
+//     var imgs = document.getElementsByClassName("art-cover");
+//     for (var i =0; i < imgs.length; i++){
+//         //图片距离顶部的距离
+//         var imgheight = imgs[i].offsetTop;
+//         if(imgheight < document.documentElement.clientHeight + document.documentElement.scrollTop){
+//             //图片预加载
+//             Preloading_images(imgs[i]);
+//             //重置已替换class
+//             imgs[i].className = imgs[i].className.replace("art-cover","");
+//         }
+//     }
+// }

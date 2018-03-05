@@ -2,7 +2,7 @@ window.onload = function(){
     checkLogin();  //登录状态
     userinfo();  //登录成功后的用户信息
     // 请求文章列表
-    user();  //个人中心的用户名称及城市星座
+    user1();  //个人中心的用户名称及城市星座
     loadArticle(1);  //动态添加的文章列表
     // 监听滚动事件
     window.addEventListener('scroll',_.throttle(lazyLoad(),1000));
@@ -10,32 +10,38 @@ window.onload = function(){
 }
 
 //动态添加用户信息
-function user(){
+var datas = window.location.href;
+    datas = datas.split("?");
+var user = datas[datas.length-6];
+var name = decodeURI(datas[datas.length-5]);
+var gender = decodeURI(datas[datas.length-4]);
+var constellations = decodeURI(datas[datas.length-3]);
+var city = decodeURI(datas[datas.length-2]);
+var avatar = datas[datas.length-1];
+function user1(){
     var icon = "";
-    var gender1 = localStorage.gender;
-    if(gender1 == "woman"){
+    if(gender == "woman"){
         icon = "../images/icon_girl.png";
-    }else if(gender1 == "man"){
+    }else if(gender == "man"){
         icon = "../images/icon_boy.png";
     }
         var userinfo = `
             <div class="user">
                 <div class="user_pic">
                     <img class="user_pic2" src="`+ icon +`" alt="">
-                    <img  class="user_pic1" src=`+image+localStorage.avatar+` alt="图片">
-                    <p class="user_name">`+localStorage.name+`</p>
-                    <p>`+localStorage.sheng1+`&nbsp&nbsp&nbsp`+localStorage.cons+`</p>
+                    <img class="user_pic1" src="`+image+avatar+`" alt="图片">
+                    <p class="user_name">`+name+`</p>
+                    <p>`+city+`&nbsp&nbsp&nbsp`+constellations+`</p>
                 </div>
             </div>
         `
         document.querySelector(".top").insertAdjacentHTML('beforeend',userinfo);
 }
-
-
 // 动态添加文章详情
 var limit = 3;
 function loadArticle(page){  // 动态添加文章详情
-    var url1 = url+'posts/list?page=' + page + '&limit=' + 2 + '&user=' + localStorage._id;
+    var url1 = url+'posts/list?page=' + page + '&limit=' + 2 + '&user=' + user;
+
     ajaxXHR('GET',url1,function(data){
         // 错误时返回：
         if(data.code!='SUCCESS'||data.data.articles.length==0){
@@ -44,8 +50,9 @@ function loadArticle(page){  // 动态添加文章详情
         }
         console.log(data);
         dt = data.data.articles;
-        document.getElementById("list_length").innerHTML = dt.length;
         for(i=0;i<dt.length;i++){ 
+            console.log("dt.length"+dt.length);
+            document.getElementById("list_length").innerHTML = dt.length;
             var x = `
             <div class="new">
                 <div class="photo1">
